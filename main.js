@@ -67,10 +67,13 @@ if (mainList.content) {
 }
 
 addButton.addEventListener('click', () => {
-  mainList.addItem(new Task(userInput.value));
+  if (userInput.value) {
+    mainList.addItem(new Task(userInput.value));
+  }
 });
+
 userInput.addEventListener('keypress', (e) => {
-  if (e.key === "Enter") {
+  if (e.key === "Enter" && userInput.value) {
     mainList.addItem(new Task(userInput.value));
   }
 });
