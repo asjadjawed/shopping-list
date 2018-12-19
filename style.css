@@ -1,0 +1,102 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(45deg, #222, #444);
+  min-height: 100vh;
+}
+
+.inputArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  display: inline-block;
+  width: 70%;
+  height: 60px;
+  border-radius: 10px 0 0 10px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  margin: 0;
+  background: pink;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Helvetica;
+}
+
+#addButton {
+  border: none;
+  outline: none;
+  background: springgreen;
+  color: white;
+  height: 60px;
+  width: 60px;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 0 10px 10px 0;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#shoppingList {
+  cursor: pointer;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+li {
+  width: 85%;
+  font-size: 20px;
+  font-family: Helvetica;
+  color: beige;
+  overflow: hidden;
+}
+
+li > button {
+  border: none;
+  outline: none;
+  color: white;
+  background: crimson;
+  border-radius: 5px;
+  font-size: 35px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.night-hotel {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 20px;
+  border: none;
+  font: normal 60px/1 "Monoton", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 0 0 10px rgb(255,255,255) , 0 0 20px rgb(255,255,255) , 0 0 30px rgb(255,255,255) , 0 0 40px rgb(255,17,119) , 0 0 70px rgb(255,17,119) , 0 0 80px rgb(255,17,119) , 0 0 100px rgb(255,17,119) , 0 0 150px rgb(255,17,119) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+}
+
+.night-hotel:hover {
+  text-shadow: 0 0 5px rgb(255,255,255) , 0 0 10px rgb(255,255,255) , 0 0 15px rgb(255,255,255) , 0 0 20px rgb(255,17,119) , 0 0 35px rgb(255,17,119) , 0 0 40px rgb(255,17,119) , 0 0 50px rgb(255,17,119) , 0 0 75px rgb(255,17,119) ;
+}
