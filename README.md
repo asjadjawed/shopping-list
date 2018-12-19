@@ -12,3 +12,5 @@ Uses:
 * CSS - Flexbox
 * JS
 * localStorage (Web Storage API)
+
+Live: [https://asjadjawed.github.io/shopping-list/](https://asjadjawed.github.io/shopping-list/)
