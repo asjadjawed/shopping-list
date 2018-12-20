@@ -9,8 +9,8 @@ Also included in main2.js a simpler version of the app without storage.
 
 Uses:
 
-* HTML5
-* Google Fonts
-* CSS - Flexbox
-* JS
-* localStorage (Web Storage API)
+- HTML5
+- Google Fonts
+- CSS - Flexbox
+- JS
+- localStorage (Web Storage API)
