@@ -36,7 +36,7 @@ class MainList {
   }
 
   taskSave() {
-    localStorage.setItem("content", JSON.stringify(this.content));
+    localStorage.setItem("shoppingList", JSON.stringify(this.content));
   }
 }
 
@@ -56,12 +56,12 @@ class Task {
 
 const mainList = new MainList();
 
-if (!localStorage.getItem("content")) {
+if (!localStorage.getItem("shoppingList")) {
   mainList.taskSave();
 }
 
 if (mainList.content) {
-  const data = JSON.parse(localStorage.getItem("content"));
+  const data = JSON.parse(localStorage.getItem("shoppingList"));
   data.forEach(t => {
     mainList.addItem(new Task(t.value, t.done.valueOf()));
   });
@@ -81,7 +81,7 @@ userInput.addEventListener("keypress", e => {
 
 userInput.focus();
 
-if (localStorage.getItem("content").length === 2) {
+if (localStorage.getItem("shoppingList").length === 2) {
   mainList.addItem(new Task("Cards"));
   mainList.addItem(new Task("Top Hat", true));
   mainList.addItem(new Task("Bunny"));
