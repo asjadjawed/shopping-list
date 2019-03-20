@@ -1,6 +1,6 @@
 # Shopping List App
 
-Live: [https://asjadjawed.github.io/shopping-list/](https://asjadjawed.github.io/shopping-list/)
+Live: [https://asjad.dev/shopping-list/](https://asjad.dev/shopping-list/)
 
 Completely front-end app that uses Javascript OOP to create a shopping list. It stores and loads the list from browser's localStorage.
 This means you won't loose your list if you close the app.
